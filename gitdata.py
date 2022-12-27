@@ -3,7 +3,7 @@ import subprocess
 import copy
 
 out = subprocess.check_output(
-    'git log --no-merges --numstat')
+    'git log --no-merges --numstat --date=iso-strict')
 
 lines = out.decode('ascii').split('\n')
 
